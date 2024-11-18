@@ -1,0 +1,786 @@
+[
+  {
+    "name": "Blades",
+    "game": 4,
+    "element": "air",
+    "type": "core",
+    "img": "images/air/Blades.webp"
+  },
+  {
+    "name": "Boom Jet",
+    "game": 3,
+    "element": "air",
+    "type": "swapper",
+    "img": "images/air/Boom-jet.webp"
+  },
+  {
+    "name": "Fling Kong",
+    "game": 4,
+    "element": "air",
+    "type": "core",
+    "img": "images/air/Fling-kong.webp"
+  },
+  {
+    "name": "Free Ranger",
+    "game": 3,
+    "element": "air",
+    "type": "swapper",
+    "img": "images/air/Free-ranger.webp"
+  },
+  {
+    "name": "Gusto",
+    "game": 4,
+    "element": "air",
+    "type": "trap-master",
+    "img": "images/air/Gusto.webp"
+  },
+  {
+    "name": "Jet Vac",
+    "game": 2,
+    "element": "air",
+    "type": "core",
+    "img": "images/air/Jet-vac.webp"
+  },
+  {
+    "name": "Lightning Rod",
+    "game": 1,
+    "element": "air",
+    "type": "core",
+    "img": "images/air/Lightning-rod.webp"
+  },
+  {
+    "name": "Pop Thorne",
+    "game": 3,
+    "element": "air",
+    "type": "core",
+    "img": "images/air/Pop-thorne.webp"
+  },
+  {
+    "name": "Sonic Boom",
+    "game": 1,
+    "element": "air",
+    "type": "core",
+    "img": "images/air/Sonic-boom.webp"
+  },
+  {
+    "name": "Swarm",
+    "game": 2,
+    "element": "air",
+    "type": "giant",
+    "img": "images/air/Swarm.webp"
+  },
+  {
+    "name": "Warnado",
+    "game": 1,
+    "element": "air",
+    "type": "core",
+    "img": "images/air/Warnado.webp"
+  },
+  {
+    "name": "Whirlwind",
+    "game": 1,
+    "element": "air",
+    "type": "core",
+    "img": "images/air/Whirlwind.webp"
+  },
+  {
+    "name": "Knight Mare",
+    "game": 4,
+    "element": "dark",
+    "type": "trap-master",
+    "img": "images/dark/Knight-mare.webp"
+  },
+  {
+    "name": "Bash",
+    "game": 1,
+    "element": "earth",
+    "type": "core",
+    "img": "images/earth/Bash.webp"
+  },
+  {
+    "name": "Bop",
+    "game": 4,
+    "element": "earth",
+    "type": "mini",
+    "img": "images/earth/Bop.webp"
+  },
+  {
+    "name": "Crusher",
+    "game": 2,
+    "element": "earth",
+    "type": "giant",
+    "img": "images/earth/Crusher.webp"
+  },
+  {
+    "name": "Dino Rang",
+    "game": 1,
+    "element": "earth",
+    "type": "core",
+    "img": "images/earth/Dino-rang.webp"
+  },
+  {
+    "name": "Doom Stone",
+    "game": 3,
+    "element": "earth",
+    "type": "swapper",
+    "img": "images/earth/Doom-stone.webp"
+  },
+  {
+    "name": "Fist Bump",
+    "game": 4,
+    "element": "earth",
+    "type": "core",
+    "img": "images/earth/Fist-bump.webp"
+  },
+  {
+    "name": "Flashwing",
+    "game": 2,
+    "element": "earth",
+    "type": "core",
+    "img": "images/earth/Flashwing.webp"
+  },
+  {
+    "name": "Golden Queen",
+    "game": 6,
+    "element": "earth",
+    "type": "sensei",
+    "img": "images/earth/Golden-queen.webp"
+  },
+  {
+    "name": "Prism Break",
+    "game": 1,
+    "element": "earth",
+    "type": "core",
+    "img": "images/earth/Prism-break.webp"
+  },
+  {
+    "name": "Rocky Roll",
+    "game": 4,
+    "element": "earth",
+    "type": "core",
+    "img": "images/earth/Rocky-roll.webp"
+  },
+  {
+    "name": "Rubble Rouser",
+    "game": 3,
+    "element": "earth",
+    "type": "swapper",
+    "img": "images/earth/Rubble-rouser.webp"
+  },
+  {
+    "name": "Scorp",
+    "game": 3,
+    "element": "earth",
+    "type": "core",
+    "img": "images/earth/Scorp.webp"
+  },
+  {
+    "name": "Slobber Tooth",
+    "game": 3,
+    "element": "earth",
+    "type": "core",
+    "img": "images/earth/Slobber-tooth.webp"
+  },
+  {
+    "name": "Terrabite",
+    "game": 4,
+    "element": "earth",
+    "type": "mini",
+    "img": "images/earth/Terrabite.webp"
+  },
+  {
+    "name": "Terrafin",
+    "game": 1,
+    "element": "earth",
+    "type": "core",
+    "img": "images/earth/Terrafin.webp"
+  },
+  {
+    "name": "Wallop",
+    "game": 4,
+    "element": "earth",
+    "type": "trap-master",
+    "img": "images/earth/Wallop.webp"
+  },
+  {
+    "name": "Blast Zone",
+    "game": 3,
+    "element": "fire",
+    "type": "swapper",
+    "img": "images/fire/Blast-zone.webp"
+  },
+  {
+    "name": "Eruptor",
+    "game": 1,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Eruptor.webp"
+  },
+  {
+    "name": "Fire Kraken",
+    "game": 3,
+    "element": "fire",
+    "type": "swapper",
+    "img": "images/fire/Fire-kraken.webp"
+  },
+  {
+    "name": "Flameslinger",
+    "game": 1,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Flameslinger.webp"
+  },
+  {
+    "name": "Eruptor",
+    "game": 1,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Eruptor.webp"
+  },
+  {
+    "name": "Fryno",
+    "game": 3,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Fryno.webp"
+  },
+  {
+    "name": "Hot Dog",
+    "game": 2,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Hot-dog.webp"
+  },
+  {
+    "name": "Hot Head",
+    "game": 2,
+    "element": "fire",
+    "type": "giant",
+    "img": "images/fire/Hot-head.webp"
+  },
+  {
+    "name": "Ignitor",
+    "game": 1,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Ignitor.webp"
+  },
+  {
+    "name": "Smolderdash",
+    "game": 3,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Smolderdash.webp"
+  },
+  {
+    "name": "Spitfire",
+    "game": 5,
+    "element": "fire",
+    "type": "supercharger",
+    "img": "images/fire/Spitfire.webp"
+  },
+  {
+    "name": "Sunburn",
+    "game": 1,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Sunburn.webp"
+  },
+  {
+    "name": "Eruptor",
+    "game": 1,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Eruptor.webp"
+  },
+  {
+    "name": "Tae Kwon Crow",
+    "game": 6,
+    "element": "fire",
+    "type": "sensei",
+    "img": "images/fire/Tae-kwon-crow.webp"
+  },
+  {
+    "name": "Torch",
+    "game": 4,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Torch.webp"
+  },
+  {
+    "name": "Trail Blazer",
+    "game": 4,
+    "element": "fire",
+    "type": "core",
+    "img": "images/fire/Trail-blazer.webp"
+  },
+  {
+    "name": "Wildfire",
+    "game": 4,
+    "element": "fire",
+    "type": "trap-master",
+    "img": "images/fire/Wildfire.webp"
+  },
+  {
+    "name": "Bumble Blast",
+    "game": 3,
+    "element": "life",
+    "type": "core",
+    "img": "images/life/Bumble-blast.webp"
+  },
+  {
+    "name": "Bushwhack",
+    "game": 4,
+    "element": "life",
+    "type": "trap-master",
+    "img": "images/life/Bushwhack.webp"
+  },
+  {
+    "name": "Camo",
+    "game": 1,
+    "element": "life",
+    "type": "core",
+    "img": "images/life/Camo.webp"
+  },
+  {
+    "name": "Food Fight",
+    "game": 4,
+    "element": "life",
+    "type": "core",
+    "img": "images/life/Food-fight.webp"
+  },
+  {
+    "name": "Grilla Drilla",
+    "game": 3,
+    "element": "life",
+    "type": "swapper",
+    "img": "images/life/Grilla-drilla.webp"
+  },
+  {
+    "name": "High Five",
+    "game": 4,
+    "element": "life",
+    "type": "core",
+    "img": "images/life/High-five.webp"
+  },
+  {
+    "name": "Stealth Elf",
+    "game": 1,
+    "element": "life",
+    "type": "core",
+    "img": "images/life/Stealth-elf.webp"
+  },
+  {
+    "name": "Shroomboom",
+    "game": 2,
+    "element": "life",
+    "type": "core",
+    "img": "images/life/Shroomboom.webp"
+  },
+  {
+    "name": "Stink Bomb",
+    "game": 3,
+    "element": "life",
+    "type": "swapper",
+    "img": "images/life/Stink-bomb.webp"
+  },
+  {
+    "name": "Stump Smash",
+    "game": 1,
+    "element": "life",
+    "type": "core",
+    "img": "images/life/Stump-smash.webp"
+  },
+  {
+    "name": "Tree Rex",
+    "game": 2,
+    "element": "life",
+    "type": "giant",
+    "img": "images/life/Tree-rex.webp"
+  },
+  {
+    "name": "Zook",
+    "game": 1,
+    "element": "life",
+    "type": "core",
+    "img": "images/life/Zook.webp"
+  },
+  {
+    "name": "Zoo Lou",
+    "game": 3,
+    "element": "life",
+    "type": "core",
+    "img": "images/life/Zoo-lou.webp"
+  },
+  {
+    "name": "Knight Light",
+    "game": 4,
+    "element": "light",
+    "type": "trap-master",
+    "img": "images/light/Knight-light.webp"
+  },
+  {
+    "name": "Cobra Cadabra",
+    "game": 4,
+    "element": "magic",
+    "type": "core",
+    "img": "images/magic/Cobra-cadabra.webp"
+  },
+  {
+    "name": "Deja Vu",
+    "game": 4,
+    "element": "magic",
+    "type": "core",
+    "img": "images/magic/Deja-vu.webp"
+  },
+  {
+    "name": "Double Trouble",
+    "game": 1,
+    "element": "magic",
+    "type": "core",
+    "img": "images/magic/Double-trouble.webp"
+  },
+  {
+    "name": "Dune Bug",
+    "game": 3,
+    "element": "magic",
+    "type": "core",
+    "img": "images/magic/Dune-bug.webp"
+  },
+  {
+    "name": "Enigma",
+    "game": 4,
+    "element": "magic",
+    "type": "trap-master",
+    "img": "images/magic/Enigma.webp"
+  },
+  {
+    "name": "Hoot Loop",
+    "game": 3,
+    "element": "magic",
+    "type": "swapper",
+    "img": "images/magic/Hoot-loop.webp"
+  },
+  {
+    "name": "Ninjini",
+    "game": 2,
+    "element": "magic",
+    "type": "giant",
+    "img": "images/magic/Ninjini.webp"
+  },
+  {
+    "name": "Pop Fizz",
+    "game": 2,
+    "element": "magic",
+    "type": "core",
+    "img": "images/magic/Pop-fizz.webp"
+  },
+  {
+    "name": "Spry",
+    "game": 4,
+    "element": "magic",
+    "type": "mini",
+    "img": "images/magic/Spry.webp"
+  },
+  {
+    "name": "Spyro",
+    "game": 1,
+    "element": "magic",
+    "type": "core",
+    "img": "images/magic/Spyro.webp"
+  },
+  {
+    "name": "Star Strike",
+    "game": 3,
+    "element": "magic",
+    "type": "core",
+    "img": "images/magic/Star-strike.webp"
+  },
+  {
+    "name": "Trap Shadow",
+    "game": 3,
+    "element": "magic",
+    "type": "swapper",
+    "img": "images/magic/Trap-shadow.webp"
+  },
+  {
+    "name": "Voodood",
+    "game": 1,
+    "element": "magic",
+    "type": "core",
+    "img": "images/magic/Voodood.webp"
+  },
+  {
+    "name": "Wrecking Ball",
+    "game": 1,
+    "element": "magic",
+    "type": "core",
+    "img": "images/magic/Wrecking-ball.webp"
+  },
+  {
+    "name": "Boomer",
+    "game": 1,
+    "element": "tech",
+    "type": "core",
+    "img": "images/tech/Boomer.webp"
+  },
+  {
+    "name": "Bouncer",
+    "game": 2,
+    "element": "tech",
+    "type": "giant",
+    "img": "images/tech/Bouncer.webp"
+  },
+  {
+    "name": "Chopper",
+    "game": 4,
+    "element": "tech",
+    "type": "core",
+    "img": "images/tech/Chopper.webp"
+  },
+  {
+    "name": "Countdown",
+    "game": 3,
+    "element": "tech",
+    "type": "core",
+    "img": "images/tech/Countdown.webp"
+  },
+  {
+    "name": "Drill Sergeant",
+    "game": 1,
+    "element": "tech",
+    "type": "core",
+    "img": "images/tech/Drill-sergeant.webp"
+  },
+  {
+    "name": "Drobot",
+    "game": 1,
+    "element": "tech",
+    "type": "core",
+    "img": "images/tech/Drobot.webp"
+  },
+  {
+    "name": "Jawbreaker",
+    "game": 4,
+    "element": "tech",
+    "type": "trap-master",
+    "img": "images/tech/Jawbreaker.webp"
+  },
+  {
+    "name": "Magna Charge",
+    "game": 3,
+    "element": "tech",
+    "type": "swapper",
+    "img": "images/tech/Magna-charge.webp"
+  },
+  {
+    "name": "Sprocket",
+    "game": 2,
+    "element": "tech",
+    "type": "core",
+    "img": "images/tech/Sprocket.webp"
+  },
+  {
+    "name": "Spy Rise",
+    "game": 3,
+    "element": "tech",
+    "type": "swapper",
+    "img": "images/tech/Spy-rise.webp"
+  },
+  {
+    "name": "Trigger Happy",
+    "game": 1,
+    "element": "tech",
+    "type": "core",
+    "img": "images/tech/Trigger-happy.webp"
+  },
+  {
+    "name": "Wind Up",
+    "game": 3,
+    "element": "tech",
+    "type": "core",
+    "img": "images/tech/Wind-up.webp"
+  },
+  {
+    "name": "Chop Chop",
+    "game": 1,
+    "element": "undead",
+    "type": "core",
+    "img": "images/undead/Chop-chop.webp"
+  },
+  {
+    "name": "Cynder",
+    "game": 1,
+    "element": "undead",
+    "type": "core",
+    "img": "images/undead/Cynder.webp"
+  },
+  {
+    "name": "Eye Brawl",
+    "game": 2,
+    "element": "undead",
+    "type": "giant",
+    "img": "images/undead/Eye-brawl.webp"
+  },
+  {
+    "name": "Fright Rider",
+    "game": 2,
+    "element": "undead",
+    "type": "core",
+    "img": "images/undead/Fright-rider.webp"
+  },
+  {
+    "name": "Funny Bone",
+    "game": 4,
+    "element": "undead",
+    "type": "core",
+    "img": "images/undead/Funny-bone.webp"
+  },
+  {
+    "name": "Ghost Roaster",
+    "game": 1,
+    "element": "undead",
+    "type": "core",
+    "img": "images/undead/Ghost-roaster.webp"
+  },
+  {
+    "name": "Grim Creeper",
+    "game": 3,
+    "element": "undead",
+    "type": "core",
+    "img": "images/undead/Grim-creeper.webp"
+  },
+  {
+    "name": "Hex",
+    "game": 1,
+    "element": "undead",
+    "type": "core",
+    "img": "images/undead/Hex.webp"
+  },
+  {
+    "name": "Krypt King",
+    "game": 4,
+    "element": "undead",
+    "type": "trap-master",
+    "img": "images/undead/Krypt-king.webp"
+  },
+  {
+    "name": "Night Shift",
+    "game": 3,
+    "element": "undead",
+    "type": "swapper",
+    "img": "images/undead/Night-shift.webp"
+  },
+  {
+    "name": "Rattle Shake",
+    "game": 3,
+    "element": "undead",
+    "type": "swapper",
+    "img": "images/undead/Rattle-shake.webp"
+  },
+  {
+    "name": "Roller Brawl",
+    "game": 3,
+    "element": "undead",
+    "type": "core",
+    "img": "images/undead/Roller-brawl.webp"
+  },
+  {
+    "name": "Wolfgang",
+    "game": 6,
+    "element": "undead",
+    "type": "sensei",
+    "img": "images/undead/Wolfgang.webp"
+  },
+  {
+    "name": "Chill",
+    "game": 2,
+    "element": "water",
+    "type": "core",
+    "img": "images/water/Chill.webp"
+  },
+  {
+    "name": "Flip Wreck",
+    "game": 4,
+    "element": "water",
+    "type": "core",
+    "img": "images/water/Flip-wreck.webp"
+  },
+  {
+    "name": "Freeze Blade",
+    "game": 3,
+    "element": "water",
+    "type": "swapper",
+    "img": "images/water/Freeze-blade.webp"
+  },
+  {
+    "name": "Gill Grunt",
+    "game": 1,
+    "element": "water",
+    "type": "core",
+    "img": "images/water/Gill-grunt.webp"
+  },
+  {
+    "name": "King Pen",
+    "game": 6,
+    "element": "water",
+    "type": "sensei",
+    "img": "images/water/King-pen.webp"
+  },
+  {
+    "name": "Punk Shock",
+    "game": 3,
+    "element": "water",
+    "type": "core",
+    "img": "images/water/Punk-shock.webp"
+  },
+  {
+    "name": "Rip Tide",
+    "game": 3,
+    "element": "water",
+    "type": "core",
+    "img": "images/water/Rip-tide.webp"
+  },
+  {
+    "name": "Slam Bam",
+    "game": 1,
+    "element": "water",
+    "type": "core",
+    "img": "images/water/Slam-bam.webp"
+  },
+  {
+    "name": "Snap Shot",
+    "game": 4,
+    "element": "water",
+    "type": "trap-master",
+    "img": "images/water/Snap-shot.webp"
+  },
+  {
+    "name": "Thumpback",
+    "game": 2,
+    "element": "water",
+    "type": "giant",
+    "img": "images/water/Thumpback.webp"
+  },
+  {
+    "name": "Wash Buckler",
+    "game": 3,
+    "element": "water",
+    "type": "swapper",
+    "img": "images/water/Wash-buckler.webp"
+  },
+  {
+    "name": "Wham Shell",
+    "game": 1,
+    "element": "water",
+    "type": "core",
+    "img": "images/water/Wham-shell.webp"
+  },
+  {
+    "name": "Zap",
+    "game": 1,
+    "element": "water",
+    "type": "core",
+    "img": "images/water/Zap.webp"
+  }
+]
