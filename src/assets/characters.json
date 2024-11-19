@@ -49,11 +49,11 @@
     "img": "images/air/Lightning-rod.webp"
   },
   {
-    "name": "Pop Thorne",
+    "name": "Pop Thorn",
     "game": 3,
     "element": "air",
     "type": "core",
-    "img": "images/air/Pop-thorne.webp"
+    "img": "images/air/Pop-thorn.webp"
   },
   {
     "name": "Sonic Boom",
@@ -231,13 +231,6 @@
     "img": "images/fire/Flameslinger.webp"
   },
   {
-    "name": "Eruptor",
-    "game": 1,
-    "element": "fire",
-    "type": "core",
-    "img": "images/fire/Eruptor.webp"
-  },
-  {
     "name": "Fryno",
     "game": 3,
     "element": "fire",
@@ -285,13 +278,6 @@
     "element": "fire",
     "type": "core",
     "img": "images/fire/Sunburn.webp"
-  },
-  {
-    "name": "Eruptor",
-    "game": 1,
-    "element": "fire",
-    "type": "core",
-    "img": "images/fire/Eruptor.webp"
   },
   {
     "name": "Tae Kwon Crow",
