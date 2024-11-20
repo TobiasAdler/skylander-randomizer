@@ -1,19 +1,35 @@
 <template>
   <div id="app">
-    <h1>Character Picker</h1>
+    <div><img src="images/other/Skylanders_Logo.webp" class="headline-image" alt="Skylanders" /></div>
+    <div id="headline"><h2>Character Randomizer</h2></div>
 
-    <!-- Button, um die Besitzliste ein-/auszublenden -->
-    <button @click="toggleOwnedCharacters">
-      {{ showOwnedCharacters ? 'Besitzte Charaktere ausblenden' : 'Besitzte Charaktere anzeigen' }}
-    </button>
+    <div class="filters">
+      <label>
+        <select v-model="selectedGame">
+          <option value="" disabled selected hidden>Choose A Game</option>
+          <option v-for="game in uniqueGames" :key="game" :value="game">{{ getNameOfGame(game) }}</option>
+        </select>
+      </label>
+    </div>
+    <button @click="pickRandomCharacter">Choose Random Character</button>
 
-    <!-- Checkbox-Liste (nach Spielen und Elementen gruppiert) -->
+    <div v-if="selectedCharacter" class="character-display">
+      <img :src="selectedCharacter.img" alt="Character Image" />
+      <h2>{{ selectedCharacter.name }}</h2>
+    </div>
+    
+    <div>
+        <button @click="toggleOwnedCharacters">
+        {{ showOwnedCharacters ? 'Hide character List' : 'Show Character List' }}
+        </button>
+    </div>
+
     <div v-if="showOwnedCharacters" class="character-setup">
-      <h2>Besitzte Charaktere</h2>
+      <h2>All Characters</h2>
       <div v-for="(elements, game) in charactersByGame" :key="game" class="game-group">
-        <h3>Spiel {{ game }}</h3>
+        <h3>Skylanders: {{ getNameOfGame(game) }}</h3>
         <div v-for="(characters, element) in elements" :key="element" class="element-group">
-          <h4>{{ element }}</h4>
+          <h4>{{ capitalizeFirstLetter(element) }}</h4>
           <div v-for="character in characters" :key="character.name" class="character-checkbox">
             <label>
               <input 
@@ -27,27 +43,9 @@
           </div>
         </div>
       </div>
-      <button @click="saveOwnedCharacters">Speichern</button>
+      <button @click="saveOwnedCharacters">Save</button>
     </div>
 
-    <!-- Filter und Zufallsgenerator -->
-    <div class="filters">
-      <label>
-        Wähle ein Spiel:
-        <select v-model="selectedGame">
-          <option v-for="game in uniqueGames" :key="game" :value="game">{{ game }}</option>
-        </select>
-      </label>
-      <button @click="pickRandomCharacter">Zufälligen Charakter wählen</button>
-    </div>
-
-    <!-- Anzeige des zufällig gewählten Charakters -->
-    <div v-if="selectedCharacter" class="character-display">
-      <h2>{{ selectedCharacter.name }}</h2>
-      <p>Element: {{ selectedCharacter.element }}</p>
-      <p>Typ: {{ selectedCharacter.type }}</p>
-      <img :src="selectedCharacter.img" alt="Character Image" />
-    </div>
   </div>
 </template>
 
@@ -57,11 +55,11 @@ import characters from './assets/characters.json';
 export default {
   data() {
     return {
-      characters, // JSON-Daten laden
-      selectedGame: null,
+      characters,
+      selectedGame: "",
       selectedCharacter: null,
-      ownedCharacters: [], // Liste der besitzten Charaktere
-      showOwnedCharacters: false, // Steuert die Sichtbarkeit der Checkbox-Liste
+      ownedCharacters: [],
+      showOwnedCharacters: false,
     };
   },
   computed: {
@@ -69,7 +67,6 @@ export default {
       return [...new Set(this.characters.map((char) => char.game))].sort((a, b) => a - b);
     },
     charactersByGame() {
-      // Gruppiere Charaktere nach Spiel und dann nach Element
       return this.characters.reduce((gameGroups, character) => {
         if (!gameGroups[character.game]) {
           gameGroups[character.game] = {};
@@ -83,30 +80,39 @@ export default {
     },
   },
   methods: {
+    getNameOfGame(gameId) {
+    const games = {
+        1: "Spyros Adventure",
+        2: "Giants",
+        3: "Swap Force",
+        4: "Trap Team",
+        5: "Superchargers"
+    };
+        return games[gameId] || "Imaginators";
+    },
+    capitalizeFirstLetter(str) {
+    if (!str) return "";
+        return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+    },
     toggleOwnedCharacters() {
-      // Sichtbarkeit der Besitzliste toggeln
       this.showOwnedCharacters = !this.showOwnedCharacters;
     },
     pickRandomCharacter() {
-      // Filtere Charaktere nach Spiel und Besitzstatus
       const filteredCharacters = this.characters.filter(
         (char) => char.game <= this.selectedGame && this.ownedCharacters.includes(char.name)
       );
       if (filteredCharacters.length > 0) {
-        // Zufälligen Charakter auswählen
         const randomIndex = Math.floor(Math.random() * filteredCharacters.length);
         this.selectedCharacter = filteredCharacters[randomIndex];
       } else {
-        alert("Keine Charaktere für das gewählte Spiel gefunden oder nicht besessen!");
+        alert("No game selected.");
       }
     },
     saveOwnedCharacters() {
-      // Speichere die Liste der besitzten Charaktere im localStorage
       localStorage.setItem('ownedCharacters', JSON.stringify(this.ownedCharacters));
-      alert('Besitzte Charaktere gespeichert!');
+      alert('Owned characters saved.');
     },
     loadOwnedCharacters() {
-      // Lade die Liste der besitzten Charaktere aus dem localStorage
       const storedCharacters = localStorage.getItem('ownedCharacters');
       if (storedCharacters) {
         this.ownedCharacters = JSON.parse(storedCharacters);
@@ -114,18 +120,31 @@ export default {
     },
   },
   mounted() {
-    // Lade die gespeicherten Charaktere beim Start der Anwendung
     this.loadOwnedCharacters();
   },
 };
 </script>
 
 <style>
-/* Einfaches Styling */
 #app {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 20px;
+}
+
+.headline-image {
+    height: auto;
+    width: 30em;
+}
+
+@media only screen and (max-width: 600px) {
+    .headline-image {
+        width: 15em;
+    }
+}
+
+select option[disabled] {
+    color: gray;
 }
 
 button {
