@@ -721,6 +721,13 @@
     "img": "images/magic/Enigma.webp"
   },
   {
+    "name": "Blastermind",
+    "game": 4,
+    "element": "magic",
+    "type": "trap-master",
+    "img": "images/magic/Blastermind.webp"
+  },
+  {
     "name": "Hoot Loop",
     "game": 3,
     "element": "magic",
