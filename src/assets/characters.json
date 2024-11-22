@@ -35,6 +35,69 @@
     "img": "images/air/Gusto.webp"
   },
   {
+    "name": "Thunderbolt",
+    "game": 4,
+    "element": "air",
+    "type": "trap-master",
+    "img": "images/air/Thunderbolt.webp"
+  },
+  {
+    "name": "Scratch",
+    "game": 3,
+    "element": "air",
+    "type": "core",
+    "img": "images/air/Scratch.webp"
+  },
+  {
+    "name": "Breeze",
+    "game": 4,
+    "element": "air",
+    "type": "mini",
+    "img": "images/air/Breeze.webp"
+  },
+  {
+    "name": "Pet Vac",
+    "game": 4,
+    "element": "air",
+    "type": "mini",
+    "img": "images/air/Pet-vac.webp"
+  },
+  {
+    "name": "Hurricane Jet Vac",
+    "game": 5,
+    "element": "air",
+    "type": "supercharger",
+    "img": "images/air/Hurricane-jet-vac.webp"
+  },
+  {
+    "name": "Stormblade",
+    "game": 5,
+    "element": "air",
+    "type": "supercharger",
+    "img": "images/air/Stormblade.webp"
+  },
+  {
+    "name": "Air Strike",
+    "game": 6,
+    "element": "air",
+    "type": "sensei",
+    "img": "images/air/Air-strike.webp"
+  },
+  {
+    "name": "Wild Storm",
+    "game": 6,
+    "element": "air",
+    "type": "sensei",
+    "img": "images/air/Wild-storm.webp"
+  },
+  {
+    "name": "Bad Juju",
+    "game": 6,
+    "element": "air",
+    "type": "sensei",
+    "img": "images/air/Bad-juju.webp"
+  },
+  {
     "name": "Jet Vac",
     "game": 2,
     "element": "air",
@@ -91,6 +154,41 @@
     "img": "images/dark/Knight-mare.webp"
   },
   {
+    "name": "Blackout",
+    "game": 4,
+    "element": "dark",
+    "type": "core",
+    "img": "images/dark/Blackout.webp"
+  },
+  {
+    "name": "Nightfall",
+    "game": 5,
+    "element": "dark",
+    "type": "supercharger",
+    "img": "images/dark/Nightfall.webp"
+  },
+  {
+    "name": "Starcast",
+    "game": 6,
+    "element": "dark",
+    "type": "sensei",
+    "img": "images/dark/Starcast.webp"
+  },
+  {
+    "name": "Hoodsickle",
+    "game": 6,
+    "element": "dark",
+    "type": "sensei",
+    "img": "images/dark/Hoodsickle.webp"
+  },
+  {
+    "name": "Kaos",
+    "game": 6,
+    "element": "kaos",
+    "type": "sensei",
+    "img": "images/kaos/Kaos.webp"
+  },
+  {
     "name": "Bash",
     "game": 1,
     "element": "earth",
@@ -140,6 +238,20 @@
     "img": "images/earth/Flashwing.webp"
   },
   {
+    "name": "Barbella",
+    "game": 6,
+    "element": "earth",
+    "type": "sensei",
+    "img": "images/earth/Barbella.webp"
+  },
+  {
+    "name": "Tri Tip",
+    "game": 6,
+    "element": "earth",
+    "type": "sensei",
+    "img": "images/earth/Tri-tip.webp"
+  },
+  {
     "name": "Golden Queen",
     "game": 6,
     "element": "earth",
@@ -152,6 +264,27 @@
     "element": "earth",
     "type": "core",
     "img": "images/earth/Prism-break.webp"
+  },
+  {
+    "name": "Smash Hit",
+    "game": 5,
+    "element": "earth",
+    "type": "supercharger",
+    "img": "images/earth/Smash-hit.webp"
+  },
+  {
+    "name": "Shark Shooter Terrafin",
+    "game": 5,
+    "element": "earth",
+    "type": "supercharger",
+    "img": "images/earth/Shark-shooter-terrafin.webp"
+  },
+  {
+    "name": "Head Rush",
+    "game": 4,
+    "element": "earth",
+    "type": "trap-master",
+    "img": "images/earth/Head-rush.webp"
   },
   {
     "name": "Rocky Roll",
@@ -287,6 +420,55 @@
     "img": "images/fire/Tae-kwon-crow.webp"
   },
   {
+    "name": "Flare Wolf",
+    "game": 6,
+    "element": "fire",
+    "type": "sensei",
+    "img": "images/fire/Flare-wolf.webp"
+  },
+  {
+    "name": "Ember",
+    "game": 6,
+    "element": "fire",
+    "type": "sensei",
+    "img": "images/fire/Ember.webp"
+  },
+  {
+    "name": "Hammer Slam Bowser",
+    "game": 5,
+    "element": "fire",
+    "type": "supercharger",
+    "img": "images/fire/Hammer-slam-bowser.webp"
+  },
+  {
+    "name": "Lava Lance Eruptor",
+    "game": 5,
+    "element": "fire",
+    "type": "supercharger",
+    "img": "images/fire/Lava-lance-eruptor.webp"
+  },
+  {
+    "name": "Small Fry",
+    "game": 4,
+    "element": "fire",
+    "type": "mini",
+    "img": "images/fire/Small-fry.webp"
+  },
+  {
+    "name": "Weeruptor",
+    "game": 4,
+    "element": "fire",
+    "type": "mini",
+    "img": "images/fire/Weeruptor.webp"
+  },
+  {
+    "name": "Ka Boom",
+    "game": 4,
+    "element": "fire",
+    "type": "trap-master",
+    "img": "images/fire/Ka-boom.webp"
+  },
+  {
     "name": "Torch",
     "game": 4,
     "element": "fire",
@@ -320,6 +502,76 @@
     "element": "life",
     "type": "trap-master",
     "img": "images/life/Bushwhack.webp"
+  },
+  {
+    "name": "Tuff Luck",
+    "game": 4,
+    "element": "life",
+    "type": "trap-master",
+    "img": "images/life/Tuff-luck.webp"
+  },
+  {
+    "name": "Barkley",
+    "game": 4,
+    "element": "life",
+    "type": "mini",
+    "img": "images/life/Barkley.webp"
+  },
+  {
+    "name": "Whisper Elf",
+    "game": 4,
+    "element": "life",
+    "type": "mini",
+    "img": "images/life/Whisper-elf.webp"
+  },
+  {
+    "name": "Super Shot Stealth Elf",
+    "game": 5,
+    "element": "life",
+    "type": "supercharger",
+    "img": "images/life/Super-shot-stealth-elf.webp"
+  },
+  {
+    "name": "Thrillipede",
+    "game": 5,
+    "element": "life",
+    "type": "supercharger",
+    "img": "images/life/Thrillipede.webp"
+  },
+  {
+    "name": "Turbo Charge Donkey Kong",
+    "game": 5,
+    "element": "life",
+    "type": "supercharger",
+    "img": "images/life/Turbo-charge-donkey-kong.webp"
+  },
+  {
+    "name": "Chompy Mage",
+    "game": 6,
+    "element": "life",
+    "type": "sensei",
+    "img": "images/life/Chompy-mage.webp"
+  },
+  {
+    "name": "Boom Bloom",
+    "game": 6,
+    "element": "life",
+    "type": "sensei",
+    "img": "images/life/Boom-bloom.webp"
+  },
+  {
+    "name": "Ambush",
+    "game": 6,
+    "element": "life",
+    "type": "sensei",
+    "img": "images/life/Ambush.webp"
+  },
+  {
+    "name": "Crash Bandicoot",
+    "game": 6,
+    "element": "life",
+    "type": "sensei",
+    "img": "images/life/Crash-bandicoot.webp"
   },
   {
     "name": "Camo",
@@ -406,6 +658,34 @@
     "img": "images/light/Knight-light.webp"
   },
   {
+    "name": "Spotlight",
+    "game": 4,
+    "element": "light",
+    "type": "core",
+    "img": "images/light/Spotlight.webp"
+  },
+  {
+    "name": "Astroblast",
+    "game": 5,
+    "element": "light",
+    "type": "supercharger",
+    "img": "images/light/Astroblast.webp"
+  },
+  {
+    "name": "Aurora",
+    "game": 6,
+    "element": "light",
+    "type": "sensei",
+    "img": "images/light/Aurora.webp"
+  },
+  {
+    "name": "Blaster Tron",
+    "game": 6,
+    "element": "light",
+    "type": "sensei",
+    "img": "images/light/Blaster-tron.webp"
+  },
+  {
     "name": "Cobra Cadabra",
     "game": 4,
     "element": "magic",
@@ -453,6 +733,48 @@
     "element": "magic",
     "type": "giant",
     "img": "images/magic/Ninjini.webp"
+  },
+  {
+    "name": "Mini-Jini",
+    "game": 4,
+    "element": "magic",
+    "type": "mini",
+    "img": "images/magic/Mini-jini.webp"
+  },
+  {
+    "name": "Mysticat",
+    "game": 6,
+    "element": "magic",
+    "type": "sensei",
+    "img": "images/magic/Mysticat.webp"
+  },
+  {
+    "name": "Splat",
+    "game": 5,
+    "element": "magic",
+    "type": "supercharger",
+    "img": "images/magic/Splat.webp"
+  },
+  {
+    "name": "Big Bubble Pop Fizz",
+    "game": 5,
+    "element": "magic",
+    "type": "supercharger",
+    "img": "images/magic/Big-bubble-pop-fizz.webp"
+  },
+  {
+    "name": "Pain Yatta",
+    "game": 6,
+    "element": "magic",
+    "type": "sensei",
+    "img": "images/magic/Pain-yatta.webp"
+  },
+  {
+    "name": "Buckshot",
+    "game": 6,
+    "element": "magic",
+    "type": "sensei",
+    "img": "images/magic/Buckshot.webp"
   },
   {
     "name": "Pop Fizz",
@@ -537,6 +859,76 @@
     "element": "tech",
     "type": "core",
     "img": "images/tech/Drill-sergeant.webp"
+  },
+  {
+    "name": "Dr Neo Cortex",
+    "game": 6,
+    "element": "tech",
+    "type": "sensei",
+    "img": "images/tech/Dr-neo-cortex.webp"
+  },
+  {
+    "name": "Dr Krankcase",
+    "game": 6,
+    "element": "tech",
+    "type": "sensei",
+    "img": "images/tech/Dr-krankcase.webp"
+  },
+  {
+    "name": "Ro Bow",
+    "game": 6,
+    "element": "tech",
+    "type": "sensei",
+    "img": "images/tech/Ro-bow.webp"
+  },
+  {
+    "name": "Chain Reaction",
+    "game": 6,
+    "element": "tech",
+    "type": "sensei",
+    "img": "images/tech/Chain-reaction.webp"
+  },
+  {
+    "name": "High Volt",
+    "game": 5,
+    "element": "tech",
+    "type": "supercharger",
+    "img": "images/tech/High-volt.webp"
+  },
+  {
+    "name": "Double Dare Trigger Happy",
+    "game": 5,
+    "element": "tech",
+    "type": "supercharger",
+    "img": "images/tech/Double-dare-trigger-happy.webp"
+  },
+  {
+    "name": "Drobit",
+    "game": 4,
+    "element": "tech",
+    "type": "mini",
+    "img": "images/tech/Drobit.webp"
+  },
+  {
+    "name": "Trigger Snappy",
+    "game": 4,
+    "element": "tech",
+    "type": "mini",
+    "img": "images/tech/Trigger-snappy.webp"
+  },
+  {
+    "name": "Gearshift",
+    "game": 4,
+    "element": "tech",
+    "type": "trap-master",
+    "img": "images/tech/Gearshift.webp"
+  },
+  {
+    "name": "Tread Head",
+    "game": 4,
+    "element": "tech",
+    "type": "core",
+    "img": "images/tech/Tread-head.webp"
   },
   {
     "name": "Drobot",
@@ -672,6 +1064,62 @@
     "img": "images/undead/Roller-brawl.webp"
   },
   {
+    "name": "Chopscotch",
+    "game": 6,
+    "element": "undead",
+    "type": "sensei",
+    "img": "images/undead/Chopscotch.webp"
+  },
+  {
+    "name": "Pit Boss",
+    "game": 6,
+    "element": "undead",
+    "type": "sensei",
+    "img": "images/undead/Pit-boss.webp"
+  },
+  {
+    "name": "Fiesta",
+    "game": 5,
+    "element": "undead",
+    "type": "supercharger",
+    "img": "images/undead/Fiesta.webp"
+  },
+  {
+    "name": "Bone Bash Roller Brawl",
+    "game": 5,
+    "element": "undead",
+    "type": "supercharger",
+    "img": "images/undead/Bone-bash-roller-brawl.webp"
+  },
+  {
+    "name": "Hijinx",
+    "game": 4,
+    "element": "undead",
+    "type": "mini",
+    "img": "images/undead/Hijinx.webp"
+  },
+  {
+    "name": "Eye Small",
+    "game": 4,
+    "element": "undead",
+    "type": "mini",
+    "img": "images/undead/Eye-small.webp"
+  },
+  {
+    "name": "Short Cut",
+    "game": 4,
+    "element": "undead",
+    "type": "trap-master",
+    "img": "images/undead/Short-cut.webp"
+  },
+  {
+    "name": "Bat Spin",
+    "game": 4,
+    "element": "undead",
+    "type": "core",
+    "img": "images/undead/Bat-spin.webp"
+  },
+  {
     "name": "Wolfgang",
     "game": 6,
     "element": "undead",
@@ -712,6 +1160,62 @@
     "element": "water",
     "type": "sensei",
     "img": "images/water/King-pen.webp"
+  },
+  {
+    "name": "Grave Clobber",
+    "game": 6,
+    "element": "water",
+    "type": "sensei",
+    "img": "images/water/Grave-clobber.webp"
+  },
+  {
+    "name": "Tidepool",
+    "game": 6,
+    "element": "water",
+    "type": "sensei",
+    "img": "images/water/Tidepool.webp"
+  },
+  {
+    "name": "Dive Clops",
+    "game": 5,
+    "element": "water",
+    "type": "supercharger",
+    "img": "images/water/Dive-clops.webp"
+  },
+  {
+    "name": "Deep Dive Gill Grunt",
+    "game": 5,
+    "element": "water",
+    "type": "supercharger",
+    "img": "images/water/Deep-dive-gill-grunt.webp"
+  },
+  {
+    "name": "Thumpling",
+    "game": 4,
+    "element": "water",
+    "type": "mini",
+    "img": "images/water/Thumpling.webp"
+  },
+  {
+    "name": "Gill Runt",
+    "game": 4,
+    "element": "water",
+    "type": "mini",
+    "img": "images/water/Gill-runt.webp"
+  },
+  {
+    "name": "Lob Star",
+    "game": 4,
+    "element": "water",
+    "type": "trap-master",
+    "img": "images/water/Lob-star.webp"
+  },
+  {
+    "name": "Echo",
+    "game": 4,
+    "element": "water",
+    "type": "core",
+    "img": "images/water/Echo.webp"
   },
   {
     "name": "Punk Shock",
