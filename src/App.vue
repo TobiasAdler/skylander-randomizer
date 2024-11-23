@@ -25,26 +25,34 @@
     </div>
 
     <div v-if="showOwnedCharacters" class="character-setup">
-      <h2>All Characters</h2>
-      <div v-for="(elements, game) in charactersByGame" :key="game" class="game-group">
-        <h3>Skylanders: {{ getNameOfGame(game) }}</h3>
-        <div v-for="(characters, element) in elements" :key="element" class="element-group">
-          <h4>{{ capitalizeFirstLetter(element) }}</h4>
-          <div v-for="character in characters" :key="character.name" class="character-checkbox">
-            <label>
-              <input 
-                type="checkbox" 
-                v-model="ownedCharacters" 
-                :value="character.name" 
-              />
-              <img :src="character.img" :alt="character.name" class="character-image" />
-              {{ character.name }}
-            </label>
-          </div>
-        </div>
+  <h2>All Characters</h2>
+  <div v-for="(elements, game) in charactersByGame" :key="game" class="game-group">
+    <h3>Skylanders: {{ getNameOfGame(game) }}</h3>
+    <label>
+      <input 
+        type="checkbox" 
+        :checked="areAllCharactersChecked(game)" 
+        @change="toggleAllCharactersForGame(game, $event.target.checked)" 
+      />
+     Complete {{ getNameOfGame(game) }} collection
+    </label>
+    <div v-for="(characters, element) in elements" :key="element" class="element-group">
+      <h4>{{ capitalizeFirstLetter(element) }}</h4>
+      <div v-for="character in characters" :key="character.name" class="character-checkbox">
+        <label>
+          <input 
+            type="checkbox" 
+            v-model="ownedCharacters" 
+            :value="character.name" 
+          />
+          <img :src="character.img" :alt="character.name" class="character-image" />
+          {{ character.name }}
+        </label>
       </div>
-      <button @click="saveOwnedCharacters">Save</button>
     </div>
+  </div>
+  <button @click="saveOwnedCharacters">Save</button>
+</div>
 
   </div>
 </template>
@@ -89,6 +97,33 @@ export default {
         5: "Superchargers"
     };
         return games[gameId] || "Imaginators";
+    },
+    areAllCharactersChecked(game) {
+      const charactersInGame = this.getCharactersInGame(game);
+      return charactersInGame.every((character) =>
+        this.ownedCharacters.includes(character.name)
+      );
+    },
+    toggleAllCharactersForGame(game, isChecked) {
+      const charactersInGame = this.getCharactersInGame(game);
+      if (isChecked) {
+        charactersInGame.forEach((character) => {
+          if (!this.ownedCharacters.includes(character.name)) {
+            this.ownedCharacters.push(character.name);
+          }
+        });
+      } else {
+        this.ownedCharacters = this.ownedCharacters.filter(
+          (characterName) =>
+            !charactersInGame.some(
+              (character) => character.name === characterName
+            )
+        );
+      }
+    },
+    getCharactersInGame(game) {
+      const elements = this.charactersByGame[game];
+      return Object.values(elements).flat();
     },
     capitalizeFirstLetter(str) {
     if (!str) return "";
