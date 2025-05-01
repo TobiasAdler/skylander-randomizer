@@ -21,11 +21,12 @@
 
         <div v-if="selectedGame" class="element-buttons">
             <button
-                v-for="element in elements"
+                v-for="element in elementList"
                 :key="element"
                 @click="pickRandomCharacterByElement(element)"
-                class="element-btn">
-                <img :src="`images/other/${capitalizeFirstLetter(element)}.webp`" :alt="element" />
+                class="element-btn"
+            >
+                <img :src="`images/other/${capitalizeFirstLetter(element)}.webp`" :alt="element"/>
             </button>
         </div>
 
@@ -79,12 +80,17 @@ export default {
             selectedCharacter: null,
             ownedCharacters: [],
             showOwnedCharacters: false,
+            classicElements: ['fire', 'water', 'air', 'earth', 'magic', 'tech', 'life', 'undead'],
             elements: ['fire', 'water', 'air', 'earth', 'magic', 'tech', 'life', 'undead', 'light', 'dark']
         };
     },
     computed: {
         uniqueGames() {
             return [...new Set(this.characters.map((char) => char.game))].sort((a, b) => a - b);
+        },
+        elementList() {
+            if (!this.selectedGame) return [];
+            return this.selectedGame >= 4 ? this.elements : this.classicElements;
         },
         charactersByGame() {
             return this.characters.reduce((gameGroups, character) => {
@@ -191,8 +197,13 @@ export default {
 </script>
 
 <style>
+body {
+    background-color: #1c1c1c;
+}
+
 #app {
     font-family: Arial, sans-serif;
+    color: white;
     text-align: center;
     margin: 20px;
 }
@@ -243,13 +254,19 @@ button {
     height: 40px;
     margin-right: 10px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+}
+
+.character-checkbox input {
+    width: 20px;
+    height: 20px;
+
 }
 
 .character-display img {
     max-width: 200px;
     height: auto;
 }
+
 .element-buttons {
     margin: 20px 0;
 }
