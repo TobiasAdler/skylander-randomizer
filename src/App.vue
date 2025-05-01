@@ -30,6 +30,30 @@
             </button>
         </div>
 
+        <div class="special-buttons element-buttons">
+            <button
+                v-if="selectedGame >= 2"
+                @click="pickRandomCharacterByType('giant')"
+                class="element-btn"
+            >
+                <img src="images/other/Giant.webp" alt="Giant"/>
+            </button>
+            <button
+                v-if="selectedGame >= 4"
+                @click="pickRandomCharacterByType('trap-master')"
+                class="element-btn"
+            >
+                <img src="images/other/Trap-master.webp" alt="Trap Master"/>
+            </button>
+            <button
+                v-if="selectedGame >= 6"
+                @click="pickRandomCharacterByType('sensei')"
+                class="element-btn"
+            >
+                <img src="images/other/Sensei.webp" alt="Sensei"/>
+            </button>
+        </div>
+
         <div>
             <button @click="toggleOwnedCharacters">
                 {{ showOwnedCharacters ? 'Hide character List' : 'Show Character List' }}
@@ -179,6 +203,20 @@ export default {
                 alert(`No character for element: ${this.capitalizeFirstLetter(element)}`);
             }
         },
+        pickRandomCharacterByType(type) {
+            const filtered = this.characters.filter(
+                (char) =>
+                    char.game <= this.selectedGame &&
+                    char.type === type &&
+                    this.ownedCharacters.includes(char.name)
+            );
+            if (filtered.length > 0) {
+                const randomIndex = Math.floor(Math.random() * filtered.length);
+                this.selectedCharacter = filtered[randomIndex];
+            } else {
+                alert(`No ${this.capitalizeFirstLetter(type)} character found.`);
+            }
+        },
         saveOwnedCharacters() {
             localStorage.setItem('ownedCharacters', JSON.stringify(this.ownedCharacters));
             alert('Owned characters saved.');
@@ -290,5 +328,10 @@ button {
     height: 100%;
     object-fit: cover;
 }
+
+.special-buttons {
+    margin-top: 10px;
+}
+
 
 </style>
