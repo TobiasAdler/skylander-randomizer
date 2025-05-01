@@ -12,7 +12,7 @@
             </label>
         </div>
 
-        <button @click="pickRandomCharacter">Choose Random Character</button>
+        <button class="btn" @click="pickRandomCharacter">Choose Random Character</button>
 
         <div v-if="selectedCharacter" class="character-display">
             <img :src="selectedCharacter.img" alt="Character Image"/>
@@ -39,11 +39,25 @@
                 <img src="images/other/Giant.webp" alt="Giant"/>
             </button>
             <button
+                v-if="selectedGame >= 3"
+                @click="pickRandomCharacterByType('swapper')"
+                class="element-btn"
+            >
+                <img src="images/other/Swapper.webp" alt="Swapper"/>
+            </button>
+            <button
                 v-if="selectedGame >= 4"
                 @click="pickRandomCharacterByType('trap-master')"
                 class="element-btn"
             >
                 <img src="images/other/Trap-master.webp" alt="Trap Master"/>
+            </button>
+            <button
+                v-if="selectedGame >= 5"
+                @click="pickRandomCharacterByType('supercharger')"
+                class="element-btn"
+            >
+                <img src="images/other/Supercharger.webp" alt="Supercharger"/>
             </button>
             <button
                 v-if="selectedGame >= 6"
@@ -55,7 +69,7 @@
         </div>
 
         <div>
-            <button @click="toggleOwnedCharacters">
+            <button class="btn" @click="toggleOwnedCharacters">
                 {{ showOwnedCharacters ? 'Hide character List' : 'Show Character List' }}
             </button>
         </div>
@@ -87,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <button @click="saveOwnedCharacters">Save</button>
+            <button class="btn" @click="saveOwnedCharacters">Save</button>
         </div>
 
     </div>
@@ -104,8 +118,8 @@ export default {
             selectedCharacter: null,
             ownedCharacters: [],
             showOwnedCharacters: false,
-            classicElements: ['fire', 'water', 'air', 'earth', 'magic', 'tech', 'life', 'undead'],
-            elements: ['fire', 'water', 'air', 'earth', 'magic', 'tech', 'life', 'undead', 'light', 'dark']
+            classicElements: ['air', 'life', 'undead', 'earth', 'fire', 'water', 'magic', 'tech'],
+            elements: ['air', 'life', 'undead', 'earth', 'fire', 'water', 'magic', 'tech', 'light', 'dark']
         };
     },
     computed: {
@@ -236,12 +250,12 @@ export default {
 
 <style>
 body {
-    background-color: #1c1c1c;
+    background-color: var(--bg-color);
 }
 
 #app {
     font-family: Arial, sans-serif;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     margin: 20px;
 }
@@ -255,6 +269,41 @@ body {
     .headline-image {
         width: 15em;
     }
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--element-bg-color);
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--checkbox-check);
+    border-color: var(--checkbox-check);
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--element-bg-color);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+input[type="checkbox"]:hover {
+    border-color: var(--element-hover-border-color);
 }
 
 select option[disabled] {
@@ -333,5 +382,64 @@ button {
     margin-top: 10px;
 }
 
+.filters select {
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--element-bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23aaa" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    padding: 10px 2.5em 10px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filters select:hover {
+    border-color: var(--element-hover-border-color);
+    background-color: var(--element-hover-bg-color);
+}
+
+.filters option {
+    background-color: var(--element-bg-color);
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--element-bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: var(--element-hover-bg-color);
+    border-color: var(--element-hover-border-color);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+:root {
+    --bg-color: #1c1c1c;
+    --border-color: #555;
+    --element-bg-color: #121212;
+    --text-color: #f5f5f5;
+    --element-hover-border-color: #f5f5f5;
+    --element-hover-bg-color: #2a2a2a;
+    --checkbox-check: #dce4ea;
+}
 
 </style>

@@ -24,6 +24,8 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Publish to Pages
-1. Build project with `npm run build`
-2. Stage & Commit Changes
-3. `git subtree push --prefix dist origin gh-pages`
+1. Delete 'dist' directory
+2. Delete 'gh-pages' branch
+3. Build project with `npm run build`
+4. Stage & Commit Changes
+5. `git subtree push --prefix dist origin gh-pages`
